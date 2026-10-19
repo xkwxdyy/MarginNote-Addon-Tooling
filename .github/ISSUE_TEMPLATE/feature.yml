@@ -1,0 +1,29 @@
+name: Feature request
+description: Describe a concrete task and the desired outcome.
+title: "[Feature] "
+body:
+  - type: input
+    id: plugin
+    attributes:
+      label: Plugin or workspace component
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Task and current difficulty
+      description: Describe the operation and its current limitation.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Expected result
+      description: A concrete example helps define acceptance criteria.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Existing alternatives and constraints
+      description: Optional; include compatibility or workflow constraints when relevant.

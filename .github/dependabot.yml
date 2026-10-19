@@ -1,0 +1,9 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 3
+# Add reviewed npm entries only for actual package directories with committed lockfiles.
+# Security alerts and security updates are repository settings, not enabled by this file.

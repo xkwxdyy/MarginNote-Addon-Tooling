@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "projects": {
+    "example-addon": {
+      "path": "Projects/example-addon",
+      "payload": "."
+    },
+    "upstream-customization": {
+      "path": "Projects/upstream-customization",
+      "payload": "plugin"
+    }
+  }
+}

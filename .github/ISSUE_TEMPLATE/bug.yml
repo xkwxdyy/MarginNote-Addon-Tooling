@@ -1,0 +1,41 @@
+name: Bug report
+description: Report a reproducible plugin problem.
+title: "[Bug] "
+body:
+  - type: input
+    id: plugin
+    attributes:
+      label: Plugin and version
+      placeholder: Plugin name, exact version, and channel
+    validations:
+      required: true
+  - type: input
+    id: host
+    attributes:
+      label: MarginNote version and platform
+      placeholder: MarginNote version; macOS or iPadOS version
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: Use a small, synthetic example when possible.
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and observed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Optional evidence
+      description: A short redacted excerpt or screenshot is sufficient. Full logs, real notes, account details, license data, and access tokens are not required.
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Related plugins or last working version
+      description: Include versions only when the problem depends on another plugin.
